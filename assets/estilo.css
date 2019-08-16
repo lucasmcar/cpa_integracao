@@ -1,0 +1,131 @@
+body{
+    background-color: #9999ff;
+    font-family: arial;
+}
+
+.logo-box{
+    padding: 16px;
+    
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 32%;
+    margin-right: 25%;
+    margin-bottom: 50px;
+}
+
+@media(min-width:360px){
+     padding: 16px;
+    
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 25%;
+    margin-bottom: 50px;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input{
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-appearance:none;
+}
+
+.label-float input:focus{
+  border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.label-float input:required:invalid + label{
+  color: red;
+}
+.label-float input:focus:required:invalid{
+  border: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  top: 0;
+  color: #3951b2;
+}
+
+.box-form{
+    background: white;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    height: auto;
+    width: 300px;
+}
+
+.box-form:hover{
+    border: none;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#msg{
+    font-size: 10px;
+    color: red;
+}
+
+.m-box-form{
+    margin-left: 37%;
+    margin-right: 20%;
+}
+
+.btn-primary-cpa{
+    background: #9999ff;
+    color: white;
+    
+}
+
+.btn{
+    width: 295px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 12px;
+    height: 50px;
+}
+
+.btn-primary-cpa:hover{
+    border:1px solid #1616AB;
+    color: #1616AB;
+    background-color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+    animation-delay: 0.5s;
+}
+
