@@ -1,16 +1,37 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Alunos
- *
- * @author anne_
- */
 class Alunos {
-    //put your code here
+    
+    private $matricula;
+    private $senha;
+    private $curso;
+    
+  
+    function getMatricula() {
+        return $this->matricula;
+    }
+
+    function getSenha() {
+        return $this->senha;
+    }
+
+    function getCurso() {
+        return $this->curso;
+    }
+
+    function setMatricula($matricula) {
+        $this->matricula = $matricula;
+    }
+
+    function setSenha($senha) {
+        $this->senha = $senha;
+    }
+
+    function setCurso($curso) {
+        $this->curso = $curso;
+    }
+
+
+
+    
 }

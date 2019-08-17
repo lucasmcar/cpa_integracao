@@ -19,7 +19,7 @@ and open the template in the editor.
         </div>
         
         <div class="box-form m-box-form">
-            <form>
+            <form method="post" action="../configuracao/valida-dados.php">
             <p>Acesso do:</p>
             <label for="idProfessor">
                 <input type="radio" id="idProfessor"  name="rdCpa" value="Professor">

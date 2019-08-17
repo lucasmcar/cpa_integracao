@@ -4,6 +4,7 @@
 function mostraMensagem(){
 var professor = document.getElementById('idProfessor');
 var aluno = document.getElementById('idAluno');
+
 var msg = document.getElementById('msg');
 
     if(professor.checked){
